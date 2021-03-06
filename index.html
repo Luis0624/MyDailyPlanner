@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Assets/css/style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+
+    <div class="container">
+    
+      <div class="row time-block timeBlock hour border border-dark m-3" id="timeBlock" data-index="9"> 
+        <label for="9am" class="col-2 label-format">9am</label>
+        <textarea class="description col-8 textInput"  id="9am" name="9am" rows="2" cols="50">
+         "blank for user input"
+        </textarea>
+        <button type="button" class="btn saveBtn col-2">Save</button>
+      </div>
+
+    
+      <div class="row time-block timeBlock hour border border-dark m-3" id="timeBlock" data-index="10"> 
+        <label for="10am" class="col-2 label-format" >10am</label>
+        <textarea class="description col-8 textInput"  id="10am" name="10am" rows="2" cols="50">
+         "blank for user input"
+        </textarea>
+        <button type="button" class="btn saveBtn col-2 ">Save</button>
+      </div>
+
+      <div class="row time-block timeBlock hour border border-dark m-3" id="timeBlock" data-index="11">
+        <label for="11am" class="col-2 label-format">11am</label>
+        <textarea class="description col-8 textInput"  id="11am" name="11am" rows="2" cols="50">
+          "blank for user input"
+        </textarea>
+        <button type="button" class="btn saveBtn col-2 ">Save</button>
+      </div>
+
+      <div class="row time-block timeBlock border border-dark m-3" id="timeBlock" data-index="12">
+        <label for="12am" class="col-2 label-format">12pm</label>
+        <textarea class="description col-8 textInput"  id="12am" name="12am" rows="2" cols="50">
+          "blank for user input"
+        </textarea>
+        <button type="button" class="btn saveBtn col-2 ">Save</button>
+      </div>
+
+      <div class="row time-block timeBlock border border-dark m-3" id="timeBlock" data-index="13">
+        <label for="1pm" class="col-2 label-format">1pm</label>
+        <textarea class="description col-8 textInput"  id="1pm" name="1pm" rows="2" cols="50">
+          "blank for user input"
+        </textarea>
+        <button type="button" class="btn saveBtn col-2 ">Save</button>
+      </div>
+
+      <div class="row time-block timeBlock border border-dark m-3" id="timeBlock" data-index="14">
+        <label for="2pm" class="col-2 label-format">2pm</label>
+        <textarea class="description col-8 textInput"  id="2pm" name="2pm" rows="2" cols="50">
+          "blank for user input"
+        </textarea>
+        <button type="button" class="btn saveBtn col-2 ">Save</button>
+      </div>
+
+      <div class="row time-block timeBlock border border-dark m-3" id="timeBlock" data-index="15">
+        <label for="3pm" class="col-2 label-format">3pm</label>
+        <textarea class="description col-8 textInput"  id="3pm" name="3pm" rows="2" cols="50">
+          "blank for user input"
+        </textarea>
+        <button type="button" class="btn saveBtn col-2 ">Save</button>
+      </div>
+
+      <div class="row time-block timeBlock border border-dark m-3" id="timeBlock" data-index="16">
+        <label for="4pm" class="col-2 label-format">4pm</label>
+        <textarea class="description col-8 textInput"  id="4pm" name="4pm" rows="2" cols="50">
+          "blank for user input"
+        </textarea>
+        <button type="button" class="btn saveBtn col-2 ">Save</button>
+      </div>
+
+      <div class="row time-block timeBlock border border-dark m-3" id="timeBlock" data-index="17">
+        <label for="5pm" class="col-2 label-format">5pm</label>
+        <textarea class="description col-8 textInput"  id="5pm" name="5pm" rows="2" cols="50">
+          "blank for user input"
+        </textarea>
+        <button type="button" class="btn saveBtn col-2 ">Save</button>
+      </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="/Assets/js/script.js"></script>
+  </body>
+</html>
