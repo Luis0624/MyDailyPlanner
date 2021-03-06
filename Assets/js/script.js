@@ -48,22 +48,3 @@ $('.saveBtn').on('click', function(){
         localStorage.setItem(key, value);
     });   
 });
-
-
-// var labelEl10am = $("#10am");
-// var allUserInputs = $("#9am, #11am, #12am, #1pm, #2pm, #3pm, #4pm, #5pm");
-  
-// function removeTextArea() { 
-//     labelEl10am.on("click", function() {
-//         console.log("inside click")
-//         labelEl10am.text("")
-//         allUserInputs.on("click", function () {
-//             console.log("outside click")
-//             if (labelEl10am.val() === "") {
-//                 labelEl10am.val('"blank for user input"')
-//             }
-//         });
-//     });
-
-// };
-// removeTextArea();
