@@ -34,7 +34,7 @@ var checkTime = window.setInterval(function(){
 $(getKeyValues = (function(){
     $('.textInput').each(function(){    
         var key = $(this).attr('id');
-        var value = localStorage.getItem(key);
+        var value = localStorage.getItem(key)
         $(this).val(value);
     }); 
 }));
@@ -44,7 +44,30 @@ $('.saveBtn').on('click', function(){
         //need the value that was input next to the save button using dom traversal 
         var key = $(this).attr('id');
         var value = $(this).val();
+        console.log('jquery this--->', $(this))
+        console.log('THIS--->', this)
         // setItems in localStorage
         localStorage.setItem(key, value);
     });   
 });
+
+
+// var labelEl10am = $("#10am");
+// var allUserInputs = $("#9am, #11am, #12am, #1pm, #2pm, #3pm, #4pm, #5pm");
+  
+// function removeTextArea() { 
+
+//         // console.log("inside click")
+//         labelEl10am.text("")
+
+//         allUserInputs.on("click", function () {
+//             console.log("outside click")
+//             if (labelEl10am.val() === "") {
+//                 labelEl10am.val('"blank for user input"')
+//             }
+//         });
+
+// };
+// labelEl10am.on('click', removeTextArea)
+
+// removeTextArea();
